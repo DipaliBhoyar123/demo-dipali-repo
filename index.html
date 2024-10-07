@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang ="eng">
+    <head>
+        <meta charset="utf-8">
+        <title>Hello WOrld</title>
+    </head>
+    <body>
+        <h1>Dom manipulation without react ......</h1>
+        <div id="root"></div>
+        <script trype="text/javascript">
+            var whatTORender ="Hello world App without react dom";
+            var whereToRender = "root";
+            var render = (whatTORender, whereToRender) => {
+                document.getElementById(whereToRender).innerHTML = whatTORender;
+
+            }
+
+            // another way
+           var dom ={
+             whatTORender : "Hello world App without react dom",
+             whereToRender : "root",
+             render : (whatTORender, whereToRender) => {
+                document.getElementById(whereToRender).innerHTML = whatTORender;
+             },
+           };
+            render(whatTORender, whereToRender);
+        </script>
+    </body>
+</html>
